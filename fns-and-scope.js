@@ -16,7 +16,9 @@ function isTyler(name) {
 
 
 //Create a function called getName that uses prompt() to prompt the user for their name, then returns the name.
-
+function getName() {
+  prompt()
+}
 
   //Code Here
 
@@ -58,13 +60,21 @@ function isTyler(name) {
 
 //Create a function called myName that returns your name
 
-  //Code Here
+var name = "Brennan";
+
+function myName(name) {
+  return (" ");
+}  //Code Here
 
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
-  //Code Here
+  var newMyName = myName;
+
+  function newMyName() {
+    return;
+  }//Code Here
 
 //Now alert the result of invoking newMyName
 
