@@ -16,11 +16,11 @@ function isTyler(name) {
 
 
 //Create a function called getName that uses prompt() to prompt the user for their name, then returns the name.
-function getName() {
-  prompt()
+function getName(name){
+  var myName = prompt("")
+  return myName;
 }
-
-  //Code Here
+//Code Here
 
 
 //////////////////PROBLEM 3////////////////////
@@ -30,7 +30,11 @@ function getName() {
 //Create a function called welcome that uses your getName function you created in the previous problem to get the users name,
 //then alerts "Welcome, " plus whatever the users name is.
 
-  //Code Here
+function welcome(name){
+  var alertName = getName('');
+  alert('Welcome, ' + getName())
+}
+//Code Here
 
 
 //////////////////PROBLEM 4////////////////////
@@ -60,24 +64,25 @@ function getName() {
 
 //Create a function called myName that returns your name
 
-var name = "Brennan";
-
 function myName(name) {
-  return (" ");
-}  //Code Here
+  var strName = ("");
+  return strName
+}
+
+myName(Brennan)  //Code Here
 
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
-  var newMyName = myName;
+  var newMyName = myName();
 
   function newMyName() {
-    return;
-  }//Code Here
+    //Code Here
 
 //Now alert the result of invoking newMyName
-
+ return;
+}
 
 
 //////////////////PROBLEM 7////////////////////
@@ -86,10 +91,19 @@ function myName(name) {
 
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
-  //Code Here
+  function outerFn(name) {
+    return function() {
+      var anotherName = ("");
+      return anotherName
+    }
+  }//Code Here
 
 //Now save the result of invoking outerFn into a variable called innerFn.
 
-  //Code Here
+  var innerFn = outerFn();//Code Here
 
 //Now invoke innerFn.
+function innerFn(name) {
+  var fn = ("");
+  return fn
+}
